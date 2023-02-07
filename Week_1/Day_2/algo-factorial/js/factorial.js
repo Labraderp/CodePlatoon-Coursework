@@ -1,0 +1,2 @@
+exports.factorial = function(num) {
+};
