@@ -62,9 +62,8 @@ function deaf_gma(input) {
 }
 
 function lowercase_check(input) {
-    console.log(`Lowercase check came back as ${/[a-z]/.test(input)}`);
+    console.log(`Lowercase check came back as ${/[a-z]/.test(input)}`); //DEBUG
     return /[a-z]/.test(input);
-    
 }
 
 function regex_grandma(input) {
@@ -84,11 +83,11 @@ function regex_grandma(input) {
                 resp = prompt("WHAT?!");
                 return regex_grandma(resp);
             default:
-                if(lowercase_check(resp) === true) {
+                if(lowercase_check(resp) === true) {    //Check if lowercase
                     resp = prompt("SPEAK UP!");
                     return regex_grandma(resp);
                 } else {
-                    resp = prompt("NO, NOT SINCE 1946!");
+                    resp = prompt("NO, NOT SINCE 1946!"); //Default, UPPERCASE
                     return regex_grandma(resp);
                 }
         }
