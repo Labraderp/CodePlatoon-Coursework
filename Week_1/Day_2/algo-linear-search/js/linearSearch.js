@@ -4,11 +4,25 @@ for (let i = 1; i <= 1000; i++) {
 }
 
 exports.linearSearch = function(valueToFind, arrayToSearchThrough) {
-    // your code here
-    return 0
+    let index = 0;
+    while(index < arrayToSearchThrough.length) {
+        if(arrayToSearchThrough[index] === valueToFind) {
+            return index;
+        }
+        index++
+    }
+    return undefined
 };
 
 exports.linearSearchGlobal = function(valueToFind, arrayToSearchThrough) {
-    // your code here
-    return [0]
+    let result = [];
+    let index = 0;
+
+    while(index < arrayToSearchThrough.length){
+        if(arrayToSearchThrough[index] === valueToFind) {
+            result.push(index);
+        }
+        index++;
+    }
+    return result;
 };
