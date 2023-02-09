@@ -4,8 +4,6 @@ def factorial(num):
 
 	if num == 0:
 		return answer
-	elif num <= 0:
-		return print("Number must be a positive integer!")
 	else:
 		while num >= 1:
 			answer = answer * num
