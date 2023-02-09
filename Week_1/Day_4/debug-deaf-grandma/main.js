@@ -1,28 +1,35 @@
-let continue = true
 
-while ( continue ) {
 
-    let goodbyes = 0
-    let userInput = prompt()
+function main() {
+    let run = true;
+    let goodbyes = 0;
 
-    if ( userInput = "" ) {
-        alert("WHAT!?")
-    }
-    else if ( userinput.toUppercase != statement ) {
-        alert("SPEAK UP, KID!")
-    }
-    else if ( statement.toUppercase == statement ) {
-        alert('NO, NOT SINCE 1946!')
-    }
-    else if ( userinput == "GOODBYE!" ) {
-        goodbyes + 1
+    while(run) {
+        console.log("We did it, chat!");
+        let userInput = prompt("HEY KID!");
+        
+        if ( userInput == "GOODBYE!" ) {
+            goodbyes++;
 
-        if ( goodbyes == 1 ) {
-            alert("LEAVING SO SOON?')
+            if ( goodbyes == 1 ) {
+                alert("LEAVING SO SOON?");
+            }
+            else if ( goodbyes == 2 ) {
+                alert("LATER, SKATER!");
+                run = false;
+            }
         }
-        else if ( goodbyes == 2 ) {
-            alert("LATER, SKATER!")
-            continue = false
+        else if ( userInput == "" ) {
+            alert("WHAT!?");
+        }
+        else if ( userInput.toUpperCase() == userInput ) {
+            alert('NO, NOT SINCE 1946!')
+        }
+
+        else {
+            alert("SPEAK UP, KID!");
         }
     }
 }
+
+main();
