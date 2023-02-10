@@ -8,30 +8,20 @@ def is_character_match(string1, string2):
     letter_dict2 = {}
     
     for letter in string1:
-        # print(letter)
+
         if letter in letter_dict1:
             letter_dict1[letter] += 1
         else:
             letter_dict1.update({letter:1})
    
     for letter in string2:
-        # print(letter)
+
         if letter in letter_dict2:
             letter_dict2[letter] += 1
         else:
             letter_dict2.update({letter:1})
         
-    # for key in letter_dict1:
-    #     if key in letter_dict2:
-    #         if letter_dict1[key] == letter_dict2[key]:
-    #             continue
-    #         else:
-    #             return False
-    #     else:
-    #         return False
-    # return True
-    print(letter_dict1)
-    print(letter_dict2)
+
     if letter_dict1 == letter_dict2:
         return True
     return False
@@ -43,7 +33,6 @@ def anagrams_for(word, list_of_words):
     letter_dict1 = {}
     answer = []
     for letter in string1:
-        # print(letter)
         if letter in letter_dict1:
             letter_dict1[letter] += 1
         else:
@@ -54,22 +43,12 @@ def anagrams_for(word, list_of_words):
         letter_dict2 = {}
         flag = True
         for letter in string2:
-        # print(letter)
             if letter in letter_dict2:
                 letter_dict2[letter] += 1
             else:
                 letter_dict2.update({letter:1})
 
-        for key in letter_dict1:
-            if key in letter_dict2:
-                if letter_dict1[key] == letter_dict2[key]:
-                    continue
-                else:
-                    flag = False
-            else:
-                flag = False
-    
-        if flag == True:
+        if letter_dict1 == letter_dict2:
             answer.append(string2)
     
     return answer

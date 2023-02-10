@@ -1,0 +1,3 @@
+exports.palindrome = function(word) {
+
+};
