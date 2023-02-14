@@ -8,9 +8,11 @@ class ContactList:
         return self.contact_list.append(contact_info)
     
     def remove_contact(self, name):
+        index = 0
         for contacts in self.contact_list:
             if contacts["name"] == name:
-                contacts.remove(name)
+                self.contact_list.remove(self.contact_list[index])
+            index += 1
 
     def find_shared_contacts(self, other_contact_list):
         new_list = []
@@ -32,6 +34,9 @@ friends_list.add_contact({"name" : "Charlie", "num" : 789})
 print(friends_list.contact_list)
 
 new_contacts = ContactList("old friends", [{"name" : "Charlie", "num" : 789}])
+
+friends_list.remove_contact("Alice")
+print(friends_list.contact_list)
 
 combined_list = friends_list.find_shared_contacts(new_contacts)
 
