@@ -1,0 +1,1 @@
+# Your PremiumUser class goes here
