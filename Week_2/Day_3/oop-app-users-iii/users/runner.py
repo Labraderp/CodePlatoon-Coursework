@@ -1,8 +1,9 @@
-import User, FreeUser, PremiumUser
+import FreeUser, PremiumUser
+from user import User
 
 #Make User Profiles
-john = User.User("John", "Smith", 5555555)
-saul = User.User("Saul", "Goodman", 8675309)
+john = User("John", "Smith", 5555555)
+saul = User("Saul", "Goodman", 8675309)
 
 #Make Free Profile
 john = FreeUser.FreeUser(john)

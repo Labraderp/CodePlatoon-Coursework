@@ -1,4 +1,4 @@
-import User
+from user import User
 
 # Default attributes of User parent class:
 #
@@ -9,7 +9,7 @@ import User
 # self.premium = False
 # self.post_num = 0
 
-class FreeUser(User.User):
+class FreeUser(User):
     def __init__(self, user_profile):
         self.fname = user_profile.fname
         self.lname = user_profile.lname
@@ -25,8 +25,8 @@ class FreeUser(User.User):
             super().post_storage[fullname] = {}
 
         if self.post_num <= 2:
-            super().post_storage[fullname][User.User.post_count] = post
-            User.User.post_count += 1
+            super().post_storage[fullname][User.post_count] = post
+            User.post_count += 1
             self.post_num += 1
             return f"{fullname}: {post}"
         else:

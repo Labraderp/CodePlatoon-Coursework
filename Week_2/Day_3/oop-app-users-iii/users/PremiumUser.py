@@ -1,5 +1,5 @@
 # Your PremiumUser class goes here
-import User
+from user import User
 
 
 # Default attributes of User parent class:
@@ -12,7 +12,7 @@ import User
 # self.post_num = 0
 
 
-class PremiumUser(User.User):
+class PremiumUser(User):
     def __init__(self, user_profile):
         self.fname = user_profile.fname
         self.lname = user_profile.lname
