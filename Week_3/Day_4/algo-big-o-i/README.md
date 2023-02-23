@@ -18,6 +18,7 @@ Give the efficiency of each of the following code snippets. Try out the code sni
 Snippet 1 - Big O:
 
 ```python
+#O(n)
 def largest(array, value):
   for item in array:
     if item > value:
@@ -29,7 +30,7 @@ Snippet 2 - Big O:
 
 ```python
 def info_dump(customers):
-  
+  #O(n) or O(2n)
   print('Customer Names:')
   for customer in customers: 
     print(customer['name'])
@@ -42,12 +43,14 @@ def info_dump(customers):
 
 Snippet 3 - Big O:
 ```python
+#O(1)
 def first_element_is_red(array):
   return array[0] == 'red' 
 ```
 
 Snippet 4 - Big O:
 ```python
+#O(n^2)
 def duplicates(array):
   for index1, item1 in enumerate(array):
     for index2, item2 in enumerate(array):
@@ -60,6 +63,7 @@ def duplicates(array):
 
 Snippet 5 - Big O:
 ```python
+#O(n^2)
 words = ['chocolate', 'coconut', 'rainbow']
 endings = ['cookie', 'pie', 'waffle']
 
@@ -72,7 +76,7 @@ for word in words:
 Snippet 6 - Big O:
 ```python
 numbers = [1,2,3,4,5,6,7,8,9,10]
-
+#O(n)
 def print_array(array):
   for item in array:
     print(item)
@@ -83,6 +87,7 @@ Snippet 7 - Big O:
 
 ```python
 # this is insertion sort
+#O(n^2)
 def insertionSort(arr): 
   for i in range(1, len(arr)): 
     key = arr[i] 
@@ -95,6 +100,7 @@ def insertionSort(arr):
 
 Snippet 8 - Big O:
 ```python
+#O(n^2)?
 for i in range(len(my_list)):
   min_idx = i
   for j in range(i+1, len(my_list)):

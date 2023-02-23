@@ -13,7 +13,6 @@ class LinkList:
 
     self.linked_list.append(data)
     self.length += 1
-    
 
   def remove(self, data):
     # write your code to REMOVE an element from the Linked List
