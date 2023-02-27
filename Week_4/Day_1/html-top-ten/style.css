@@ -1,1 +1,110 @@
 /* to show your CSS things, you'll likely need to use this file */
+body {
+    color: black;
+    background-color: wheat;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    margin-left: 5rem;
+}
+
+p {
+    margin-left: 5rem;
+}
+
+.navbar {
+    background-color: grey;
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    transition: width 250ms ease;
+}
+
+.navbar:hover {
+    width: 16rem;
+}
+
+.navbar:hover .link-text {
+    display: block;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+}
+
+.nav-link svg {
+    max-width:  2rem;
+    margin: 0 1.5rem;
+}
+
+.link-text {
+    display: none;
+    margin-left: 0.5rem;
+    color: black
+}
+
+.link-text:hover {
+    opacity: 50%;
+    transition: opacity 250ms;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8
+}
+
+.myflexbox {
+    margin-left: 5rem;
+    display: flexbox;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    flex-direction: column;
+}
+
+.definition {
+    display: flex;
+    flex-direction: column;
+    opacity: 50%;
+    overflow: scroll;
+    width: 1fr;
+}
+
+.definition:hover {
+    opacity: 100%;
+    background-color: grey;
+    transition: opacity 250ms;
+    transition: background-color 250ms;
+}

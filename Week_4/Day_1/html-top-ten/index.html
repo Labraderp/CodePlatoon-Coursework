@@ -7,21 +7,73 @@
     <title> My Top Ten Tags & Styles</title>
   </head>
   <body>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6h96 32H424c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/></svg>
+            <span class="link-text">Images</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg>
+            <span class="link-text">Videos</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M50.7 58.5L0 160H208V32H93.7C75.5 32 58.9 42.3 50.7 58.5zM240 160H448L397.3 58.5C389.1 42.3 372.5 32 354.3 32H240V160zm208 32H0V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192z"/></svg>
+            <span class="link-text">IFrames</span>
+          </a>
+        </li>
+
+
+      </ul>
+    </nav>
+
+
+
     <header title="I'm a Header!">
       <h1 title="I'm an H1">My Top Ten</h1>
-      <img title="I'm an img" src="http://www.incrediblethings.com/wp-content/uploads/2012/07/cat-votes-for-himself.jpg">
+      <img title="I'm an img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuXub0Cs5-nzjrMOwSYMFV7H3s7mCCsAJFEggjgb4&s">
     </header>
     <section class="section" title="I'm The HTML Section">
       <h2 title="I'm an H2">HTML</h2>
       <p title="I'm a p">Here are a few HTML things I like:</p>
       <!-- Copy this Definition Div for each HTML thing you choose -->
-      <div class="definition" title="I'm a Definition Div!">
-        <h3>TERM TITLE</h3>
-        <p>Describe this term, and make an example of how its used:</p>
-        <!-- EXAMPLE CODE GOES HERE -->
-      <pre title="i'm a pre tag for code!"> < html > is the opening tag and < / html > is the closing tag.</pre>
-      <a href="#">resource link</a>
-    </div>
+      <div class="myflexbox">
+      
+        <div class="definition" title="Embedded Audio">
+        <h3>EMBEDDED AUDIO TAGS</h3>
+        <p>The < audio > tag takes a relative address or URL and embeds it into the webpage. It has a number of attributes
+           to allow for automatic playback, controls, and even initial audio levels and looping. Currently, I have it working from a local directory. If you want to pull from a URL, then you'll have to have the direct link to the .mp3, rather than just the page the song is hosted on.
+        </p>
+        <audio src="../assets/lfy.mp3" controls></audio>
+      <a href="https://htmlreference.io/element/audio/">Link to audio tag usage</a>
+        </div>
+
+        <div class="definition" title="Embedded Vids">
+      <h3>EMBEDDED VIDEOS</h3>
+        <p>The < video > tag allows for embedded videos! Just like with audio, you can use a relative address but a URL that directly leads to the .mp4 or .webm/webp file needs to be configured with MIME properties. Relative addressing will allow you to load straight from source.
+        </p>
+
+        <video src="../assets/Joren_Falls_Izu_Jap.mp4"controls></video>
+        <a href="https://htmlreference.io/element/video">Link to video tag usage</a>
+        </div>
+
+        <div class="definition" title="Iframes">
+      <h3>PAGES IN PAGES</h3>
+      <p> Using < iframe >, you can embed a webpage/video within another page! There are limitations, however. One of these is x-source security, which will flat out prevent iframe from framing the source to prevent click abuse. If the embedded page has their own set of iframes (as shown below), then unexpected behavior will likely occur!</p>
+
+      <iframe src="https://www.hyrtutorials.com/p/frames-practice.html" height="450"> Can't load page :C </iframe>
+      
+      <a href="https://www.hyrtutorials.com/p/frames-practice.html">Frames tutorial and practice</a>
+        </div>
+
+      </div>
   </section>
   <section class="section" title="I'm The CSS Section">
     <h2 title="I'm an H2">CSS Things</h2>
