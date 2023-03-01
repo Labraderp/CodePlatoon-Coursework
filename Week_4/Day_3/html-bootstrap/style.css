@@ -1,0 +1,40 @@
+:root {
+    --bg-color-main: #172136;
+    --text-color-main: #cbd9f4;
+    --byline-color: #9aa4b7;
+    --tile-color-border: #596e96;
+    --tile-color-bg: #313e59;
+}
+
+@font-face {
+    font-family: PT-Serif;
+    src: url(//fonts.googleapis.com/css?family=PT+Serif+Caption)
+}
+
+body {
+    background-color: var(--bg-color-main);
+    color: var(--text-color-main);
+}
+
+.card {
+    background-color: var(--tile-color-bg);
+    margin: 0px;
+    padding: 10px;
+    border-color: var(--tile-color-border);
+}
+
+.card-dates {
+    color: var(--byline-color);
+}
+
+.card-titles {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: PT-Serif;
+}
+
+.card-img-top {
+    width: 20vmax;
+    height: 20vmin;
+    align-self: center;
+}
