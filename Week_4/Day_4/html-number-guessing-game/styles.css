@@ -6,6 +6,9 @@ body {
 }
 
 h1 {
-  font-weight: 400
+  font-weight: 400;
 }
 
+li {
+   list-style-type: none;
+}
