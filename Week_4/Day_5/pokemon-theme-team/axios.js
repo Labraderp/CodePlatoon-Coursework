@@ -55,6 +55,7 @@ function get_types(pokemon_url) {
     });
     return new_arr;
 }
+
 // ================= HELPER FUNCTIONS ================= //
 function rng(num) {
     rng_num = Math.floor((Math.random() * num) + 1);
@@ -66,8 +67,6 @@ function pokemon_search() {
     returned_url = base_url + 'pokemon/' + rng_num + '/';
     return returned_url;
 }
-
-
 
 function get_similar(type_list) {
     console.log(type_list);
