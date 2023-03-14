@@ -21,8 +21,7 @@ BASE_DIR / 'views'
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-43d2d7+k80$c6$5tui+t_6f$koq=*hlbcga6!50b)q$8(&7=yi'
-
+# deleted
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
