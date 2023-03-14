@@ -1,0 +1,16 @@
+li {
+    color: red;
+}
+
+li.completed::after {
+    color: green;
+    text-decoration: line-through;
+}
+
+.delete_button {
+    color: red;
+}
+
+.complete_button {
+    color: green;
+}
