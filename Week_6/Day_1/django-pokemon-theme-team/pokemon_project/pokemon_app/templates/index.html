@@ -1,0 +1,27 @@
+<!DOCTYPEhtml>
+{% load static %}
+
+<html>
+    <head>
+        <title> Pokemon Team Builder </title>
+        <link rel="stylesheet" href = "{% static 'css/style.css' %}">
+        <script src= "{% static 'js/main.js' %}"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                Generate your pokemon below!
+            </h1>
+        </header>
+    
+        <main class = 'pokemon_container'>
+            <div class = 'pokemon_holder'>
+            {%block content %}
+
+
+            {%endblock content%}
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+.headers {
+    display: flex;
+    color: red;
+}
+
+.pics {
+    display: flex;
+    flex-direction: column;
+}
+
+.new_class {
+    display: flex;
+    flex-direction: row;
+}

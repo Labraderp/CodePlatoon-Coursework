@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+{% block content %}
+    {%if pokemons %}
+    <div class = "new_class">
+        {% for pokemon in pokemons %}
+
+            <h2 class = "headers"> {{ pokemon.pokemon_name }} </h2>
+            <img src = {{ pokemon.img }} class="pics"> </img>
+
+        {%endfor %}
+    </div>
+    {%else %}
+        <h3> {{ pokemon_name }}</h3>
+        <img src= {{ img }}> </img>
+    {%endif%}
+{% endblock content %}

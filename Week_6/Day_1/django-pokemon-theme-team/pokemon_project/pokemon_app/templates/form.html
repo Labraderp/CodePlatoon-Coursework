@@ -1,0 +1,16 @@
+{%  extends 'index.html' %}
+
+{% block content %}
+
+<form method = 'POST' action = 'pokemon/'>
+    {% csrf_token %}
+    <input type= 'text' name = 'pokemon_name' />
+    <input type = 'submit' value = "Get 'em all!" />
+</form>
+
+<form method = 'POST' action = 'random/'>
+    {% csrf_token %}
+    <input type = 'submit' value = "Get 'em randomly!" />
+</form>
+
+{% endblock content %}
