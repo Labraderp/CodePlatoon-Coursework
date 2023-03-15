@@ -10,6 +10,7 @@ class SwimRecordTestCase(TestCase):
 
     def test_01_validate_first_name_presence(self):
         """validates presence of first_name"""
+
         try:
             self.record.full_clean()
             raise Exception("full_clean should throw a validation error")
@@ -18,6 +19,7 @@ class SwimRecordTestCase(TestCase):
 
     def test_02_validate_last_name_presence(self):
         """validates presence of last_name"""
+
         try:
             self.record.full_clean()
             raise Exception("full_clean should throw a validation error")
@@ -45,6 +47,7 @@ class SwimRecordTestCase(TestCase):
         stroke_record = SwimRecord(stroke='doggie paddle')
         try:
             stroke_record.full_clean()
+            print(stroke_record.stroke)
             raise Exception("full_clean should throw a validation error")
         except ValidationError as e:
             self.assertTrue("doggie paddle is not a valid stroke" in e.message_dict['stroke'])
